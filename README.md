@@ -112,7 +112,7 @@ to the latents generated in the first step, using the same prompt.
 <!-- Provide the basic links for the model. -->
 
 - **Repository:** https://github.com/Stability-AI/generative-models
-- **Demo [optional]:** https://clipdrop.co/stable-diffusion
+- **Demo:** https://clipdrop.co/stable-diffusion
 
 ## Uses
 
