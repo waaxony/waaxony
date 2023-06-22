@@ -103,7 +103,7 @@ to the latents generated in the first step, using the same prompt.
 
 - **Developed by:** Stability AI
 - **Model type:** Diffusion-based text-to-image generative model
-- **License:** SDXL 0.9 Research License Agreement (TODO: get "correct" name)
+- **License:** SDXL 0.9 RESEARCH LICENSE AGREEMENT
 - **Model Description:** This is a model that can be used to generate and modify images based on text prompts. It is a [Latent Diffusion Model](https://arxiv.org/abs/2112.10752) that uses two fixed, pretrained text encoders ([OpenCLIP-ViT/G](https://github.com/mlfoundations/open_clip) and [CLIP-ViT/L](https://github.com/openai/CLIP/tree/main)).
 - **Resources for more information:** [GitHub Repository](https://github.com/Stability-AI/generative-models).
 
