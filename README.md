@@ -114,6 +114,51 @@ to the latents generated in the first step, using the same prompt.
 - **Repository:** https://github.com/Stability-AI/generative-models
 - **Demo [optional]:** [TODO: link CD]
 
+### 🧨 Diffusers 
+
+Before the official open-source release of Stable Diffusion, make sure to install `diffusers` from the [following branch](https://github.com/huggingface/diffusers/tree/sd_xl):
+
+```
+pip install git+https://github.com/huggingface/diffusers.git@sd_xl
+```
+
+In addition make sure to install `transformers`, `safetensors`, `accelerate` as well as the invisible watermark:
+```
+pip install transformers accelerate safetensors
+
+pip install "numpy>=1.17" "PyWavelets>=1.1.1" "opencv-python>=4.1.0.25"
+pip install --no-deps invisible-watermark
+```
+
+You can use the model then as follows
+```py
+from diffusers import DiffusionPipeline
+import torch
+
+pipe = DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-xl-base-0.9", torch_dtype=torch.float16, use_safetensors=True, variant="fp16")
+pipe.to("cuda")
+
+# if using torch < 2.0
+# pipe.enable_xformers_memory_efficient_attention()
+
+prompt = "An astronaut riding a green horse"
+
+images = pipe(prompt=prompt).images[0]
+```
+
+When using `torch >= 2.0`, you can improve the inference speed by 20-30% with torch.compile. Simple wrap the unet with torch compile before running the pipeline:
+```py
+pipe.unet = torch.compile(pipe.unet, mode="reduce-overhead", fullgraph=True)
+```
+
+If you are limited by GPU VRAM, you can enable *cpu offloading* by calling `pipe.enable_model_cpu_offload`
+instead of `.to("cuda")`:
+
+```diff
+- pipe.to("cuda")
++ pipe.enable_model_cpu_offload()
+```
+
 ## Uses
 
 ### Direct Use
