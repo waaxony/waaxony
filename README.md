@@ -88,8 +88,6 @@ extra_gated_fields:
 # SD-XL 0.9-base Model Card
 ![row01](01.png)
 
-This model card focuses on the model associated with the SD-XL 0.9-base model, available [here](https://github.com/Stability-AI/generative-models/). 
-
 ## Model
 
 ![pipeline](pipeline.png)
@@ -103,7 +101,7 @@ to the latents generated in the first step, using the same prompt.
 
 - **Developed by:** Stability AI
 - **Model type:** Diffusion-based text-to-image generative model
-- **License:** SDXL 0.9 Research License Agreement (TODO: get "correct" name)
+- **License:** SDXL 0.9 Research License
 - **Model Description:** This is a model that can be used to generate and modify images based on text prompts. It is a [Latent Diffusion Model](https://arxiv.org/abs/2112.10752) that uses two fixed, pretrained text encoders ([OpenCLIP-ViT/G](https://github.com/mlfoundations/open_clip) and [CLIP-ViT/L](https://github.com/openai/CLIP/tree/main)).
 - **Resources for more information:** [GitHub Repository](https://github.com/Stability-AI/generative-models).
 
@@ -112,7 +110,7 @@ to the latents generated in the first step, using the same prompt.
 <!-- Provide the basic links for the model. -->
 
 - **Repository:** https://github.com/Stability-AI/generative-models
-- **Demo [optional]:** [TODO: link CD]
+- **Demo [optional]:** https://clipdrop.co/stable-diffusion
 
 ### 🧨 Diffusers 
 
