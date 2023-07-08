@@ -116,18 +116,14 @@ to the latents generated in the first step, using the same prompt.
 
 ### 🧨 Diffusers 
 
-Before the official open-source release of Stable Diffusion, make sure to install `diffusers` from the [following branch](https://github.com/huggingface/diffusers/tree/sd_xl):
-
+Make sure to upgrade diffusers to >= 0.18.0:
 ```
-pip install git+https://github.com/huggingface/diffusers.git@sd_xl
+pip install diffusers --upgrade
 ```
 
 In addition make sure to install `transformers`, `safetensors`, `accelerate` as well as the invisible watermark:
 ```
-pip install transformers accelerate safetensors
-
-pip install "numpy>=1.17" "PyWavelets>=1.1.1" "opencv-python>=4.1.0.25"
-pip install --no-deps invisible-watermark
+pip install invisible_watermark transformers accelerate safetensors
 ```
 
 You can use the model then as follows
