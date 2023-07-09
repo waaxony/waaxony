@@ -9,6 +9,7 @@ By using the Software, you agree to the terms of this License. If you do not agr
 1. LICENSE GRANT
 
 a. Subject to your compliance with the Documentation and Sections 2, 3, and 5, Stability AI grants you a non-exclusive, worldwide, non-transferable, non-sublicensable, revocable, royalty free and limited license under Stability AI’s copyright interests to use, reproduce, and create derivative works of the Software solely for your non-commercial research purposes. The foregoing license is personal to you, and you may not assign, sublicense, distribute, publish, host, or otherwise make available this Software, derivative works of the Software, models or model weights associated with the Software, this License, or any other rights or obligations under this License without Stability AI’s prior written consent; any such assignment or sublicense without Stability AI’s prior written consent will be void and will automatically and immediately terminate this License.  For sake of clarity, this License does not grant to you the right or ability to extend any license to the Software, derivative works of the Software, or associated models or model weights to a non-Licensee, nor does this License permit you to create a new Licensee, such as by making available a copy of this License.  If you would like rights not granted by this License, you may seek permission by sending an email to legal@stability.ai.
+
 b. You may make a reasonable number of copies of the Documentation solely for your use in connection with the license to the Software granted above.
 
 c. The grant of rights expressly set forth in this Section 1 (License Grant) are the complete grant of rights to you in the Software Products, and no other licenses are granted, whether by waiver, estoppel, implication, equity or otherwise. Stability AI and its licensors reserve all rights not expressly granted by this License.
@@ -103,9 +104,9 @@ to the latents generated in the first step, using the same prompt.
 
 - **Developed by:** Stability AI
 - **Model type:** Diffusion-based text-to-image generative model
-- **License:** SDXL 0.9 Research License
+- **License:** [SDXL 0.9 Research License](https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9/blob/main/LICENSE.md)
 - **Model Description:** This is a model that can be used to generate and modify images based on text prompts. It is a [Latent Diffusion Model](https://arxiv.org/abs/2112.10752) that uses two fixed, pretrained text encoders ([OpenCLIP-ViT/G](https://github.com/mlfoundations/open_clip) and [CLIP-ViT/L](https://github.com/openai/CLIP/tree/main)).
-- **Resources for more information:** [GitHub Repository](https://github.com/Stability-AI/generative-models).
+- **Resources for more information:** [GitHub Repository](https://github.com/Stability-AI/generative-models) [SDXL paper on arXiv](https://arxiv.org/abs/2307.01952).
 
 ### Model Sources
 
